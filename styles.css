@@ -372,6 +372,19 @@ body::before {
   margin-bottom: 1.4rem;
 }
 
+.section-note {
+  margin: -0.3rem 0 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.section-note a,
+.contact-inline {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(120, 240, 213, 0.24);
+}
+
 .section-heading h2,
 .contact-card h2 {
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -544,11 +557,6 @@ body::before {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.vision-panel {
-  padding: 1.7rem;
-  max-width: 900px;
-}
-
 .contact-card {
   display: flex;
   align-items: end;
@@ -562,6 +570,9 @@ body::before {
 }
 
 .contact-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
   margin: 1rem 0 0;
   color: var(--muted);
   line-height: 1.7;
